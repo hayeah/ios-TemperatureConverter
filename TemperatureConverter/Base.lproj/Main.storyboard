@@ -60,10 +60,19 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="yqx-9g-Hhf">
                                 <rect key="frame" x="14" y="269" width="292" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="temperatureSliderChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="lRY-BA-sw9"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="jux-ej-J25" id="7xI-HK-5D4"/>
+                        <outlet property="fahrenheitLabel" destination="TtP-Aa-HUJ" id="cdV-fe-LfC"/>
+                        <outlet property="kelvinLabel" destination="4ma-aS-Yjj" id="gq4-WJ-Uq4"/>
+                        <outlet property="temperatureSlider" destination="yqx-9g-Hhf" id="Ilv-0H-vag"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
