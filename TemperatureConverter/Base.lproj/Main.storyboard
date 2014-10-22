@@ -59,17 +59,41 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFo-mk-p8h">
                                 <rect key="frame" x="16" y="36" width="568" height="20.5"/>
                                 <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="GH2-J6-vLu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GH2-J6-vLu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="GH2-J6-vLu"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tFo-mk-p8h" firstAttribute="top" secondItem="WbH-oc-ZGT" secondAttribute="bottom" constant="16" id="B8S-cB-cAP"/>
-                            <constraint firstItem="tFo-mk-p8h" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="MRb-Uo-AGb"/>
-                            <constraint firstItem="tFo-mk-p8h" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="zK6-L8-Dcd"/>
+                            <constraint firstItem="tFo-mk-p8h" firstAttribute="top" secondItem="WbH-oc-ZGT" secondAttribute="bottom" priority="999" constant="16" id="B8S-cB-cAP"/>
+                            <constraint firstItem="tFo-mk-p8h" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" priority="999" id="MRb-Uo-AGb"/>
+                            <constraint firstItem="tFo-mk-p8h" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" priority="999" id="zK6-L8-Dcd"/>
+                            <constraint firstAttribute="centerX" secondItem="tFo-mk-p8h" secondAttribute="centerX" id="zR0-vs-AFu"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zR0-vs-AFu"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="zR0-vs-AFu"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="celsiusLabel" destination="jux-ej-J25" id="7xI-HK-5D4"/>
