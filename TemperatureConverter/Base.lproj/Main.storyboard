@@ -76,22 +76,54 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌞" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvW-bi-gb1">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌜" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNK-pF-9la">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tFo-mk-p8h" firstAttribute="top" secondItem="WbH-oc-ZGT" secondAttribute="bottom" priority="999" constant="16" id="B8S-cB-cAP"/>
                             <constraint firstItem="tFo-mk-p8h" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" priority="999" id="MRb-Uo-AGb"/>
+                            <constraint firstItem="tFo-mk-p8h" firstAttribute="centerY" secondItem="UNK-pF-9la" secondAttribute="centerY" constant="-0.25" id="Mjo-Tq-dv5"/>
+                            <constraint firstItem="tFo-mk-p8h" firstAttribute="leading" secondItem="UNK-pF-9la" secondAttribute="trailing" constant="8" id="SMg-gZ-dRa"/>
+                            <constraint firstItem="NvW-bi-gb1" firstAttribute="centerY" secondItem="tFo-mk-p8h" secondAttribute="centerY" constant="0.25" id="cPb-r5-V0N"/>
+                            <constraint firstItem="NvW-bi-gb1" firstAttribute="leading" secondItem="tFo-mk-p8h" secondAttribute="trailing" constant="8" id="orI-Fw-gZS"/>
                             <constraint firstItem="tFo-mk-p8h" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" priority="999" id="zK6-L8-Dcd"/>
                             <constraint firstAttribute="centerX" secondItem="tFo-mk-p8h" secondAttribute="centerX" id="zR0-vs-AFu"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="NvW-bi-gb1"/>
+                                <exclude reference="UNK-pF-9la"/>
+                            </mask>
                             <mask key="constraints">
+                                <exclude reference="Mjo-Tq-dv5"/>
+                                <exclude reference="SMg-gZ-dRa"/>
                                 <exclude reference="zR0-vs-AFu"/>
+                                <exclude reference="cPb-r5-V0N"/>
+                                <exclude reference="orI-Fw-gZS"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="NvW-bi-gb1"/>
+                                <include reference="UNK-pF-9la"/>
+                            </mask>
                             <mask key="constraints">
+                                <include reference="Mjo-Tq-dv5"/>
+                                <include reference="SMg-gZ-dRa"/>
                                 <include reference="zR0-vs-AFu"/>
+                                <include reference="cPb-r5-V0N"/>
+                                <include reference="orI-Fw-gZS"/>
                             </mask>
                         </variation>
                     </view>
